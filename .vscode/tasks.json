@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run Android (shared task)",
+            "type": "shell",
+            "command": "npm run android",
+            "options": {
+                "cwd": "${workspaceFolder}/REACTNATIVE",
+                "shell": {
+                    "executable": "C:\\Windows\\System32\\cmd.exe",
+                    "args": ["/c"]
+                }
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "clear": false
+            },
+            "problemMatcher": []
+        }
+    ]
+}

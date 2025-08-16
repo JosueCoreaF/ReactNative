@@ -1,0 +1,35 @@
+{
+    // Use IntelliSense para saber los atributos posibles.
+    // Mantenga el puntero para ver las descripciones de los existentes atributos.
+    // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run Android (via task) and Attach",
+            "type": "node",
+            "request": "attach",
+            "address": "localhost",
+            "port": 8081,
+            "localRoot": "${workspaceFolder}/REACTNATIVE",
+            "remoteRoot": "/",
+            "restart": true,
+            "preLaunchTask": "Run Android (shared task)"
+        },
+        {
+            "name": "Attach to Node (optional)",
+            "type": "node",
+            "request": "attach",
+            "address": "localhost",
+            "port": 9229,
+            "localRoot": "${workspaceFolder}/REACTNATIVE",
+            "remoteRoot": "/",
+            "restart": true
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Run Android and Attach",
+            "configurations": ["Run Android (via task) and Attach"]
+        }
+    ]
+}
