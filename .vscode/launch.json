@@ -15,16 +15,7 @@
             "restart": true,
             "preLaunchTask": "Run Android (shared task)"
         },
-        {
-            "name": "Attach to Node (optional)",
-            "type": "node",
-            "request": "attach",
-            "address": "localhost",
-            "port": 9229,
-            "localRoot": "${workspaceFolder}/REACTNATIVE",
-            "remoteRoot": "/",
-            "restart": true
-        }
+
     ],
     "compounds": [
         {
